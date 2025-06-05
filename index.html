@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="bor">
+            <h4>Curriculum Vitae</h4>
+            <div class="mag">
+                <div class="info">
+                    <p class="name bouncing" id="animatedName"></p>
+                    <p><strong>Profession:</strong> Web Developer</p>
+                    <p><strong>Email:</strong> savvdyy@gmail.com</p>
+                    <p><strong>Phone:</strong> +855 966679230</p>
+                    <p><strong>Date of Birth:</strong>21 May 2005 (20 years old) </p>
+                    <p><strong>Place of birth:</strong>Sen Pheas Village, Trea Commune, Sam Rong District, Takeo</p>
+                    <p><strong>March 2024:</strong>2 year student at NIB university, Information Technology</p>
+                    <p><strong>Language and Skills:</strong> HTML, Bootstrap, CSS, JavaScript.</p><br><br>
+                    <p class="colo" style="color: red; "><a href="https://www.facebook.com/share/1BKjb1Cvxh/?mibextid=wwXIfr"> <i class="fa-brands fa-square-facebook"></i>FaceBook</a> <a href="https://t.me/join_teleSoaverdykh"><i class="fa-brands fa-telegram"></i>Telegram</a></p>
+
+                    <div class="buoun">
+                        <button><a href="index.html" onclick="back()">Back</a></button>
+                    </div>
+                </div>
+                <img data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" class="profile-img" src="image/soa.JPG" alt="Profile Picture">
+            </div><br><br>
+            <div class="conten container">
+                <div class="soa"></div>
+            </div><br>
+            <!-- <div class="container content-dev">
+                <div class="cons">
+                    <div class="pic">
+                        <img class="imga" src="./image/html.png" width="170px" height="170px">
+                        <p>Hyper Text Makup Language(HTML)</p>
+                        <div class="boton">
+                            <button>GO</button>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <img class="imga" src="./image/css.png" width="160px" height="160px">
+                        <p>Hyper Text Makup Language(HTML)</p>
+                        <div class="boton">
+                            <button>GO</button>
+                        </div>
+                    </div>
+                </div> -->
+            <!-- <div class="pic">
+                    <img class="imga" src="./image/btsp.png" width="160px" height="160px">
+                    <p>Hyper Text Makup Language(HTML)</p>
+                    <div class="boton">
+                        <button>GO</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pic">
+                <img class="imga" src="./image/js.png" width="160px" height="160px">
+                <p>Hyper Text Makup Language(HTML)</p>
+                <div class="boton">
+                    <button>GO</button>
+                </div>
+            </div>
+        </div> -->
+
+        </div>
+
+        <script>
+            const nameText = "Sor Soaverdy";
+            let index = 0;
+
+            function typeEffect() {
+                if (index < nameText.length) {
+                    document.getElementById("animatedName").textContent += nameText.charAt(index);
+                    index++;
+                    setTimeout(typeEffect, 150);
+                }
+            }
+            window.onload = typeEffect;
+            AOS.init();
+        </script>
+        <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
